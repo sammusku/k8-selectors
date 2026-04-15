@@ -13,7 +13,7 @@ spec:
         operator: In
         values:
          - us-east-1c
-    #soft rule
+    #soft rule is optional it will check the priority before scheduling even though the any of these expressions true pod still schedule pod because of hard rule that satisfied with zone.
    preferredDuringSchedulingIgnoredDuringExecution:
      - weight: 10
        preference:
