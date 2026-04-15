@@ -4,8 +4,10 @@ metadata:
   name: nginx
   labels:
     project: roboshop
-    component: frontend
+
 spec:
+  nodeSelector: 
+   project: roboshop
   containers:
     - name: nginx
       image: nginx
