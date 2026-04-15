@@ -22,5 +22,9 @@ spec:
  containers:
    - name: nginx
      image: nginx
-
+ tolerations:
+  - key: "project"
+    operator: "Equal"
+    value: "Amazon"
+    effect: "NoExecute"
    
