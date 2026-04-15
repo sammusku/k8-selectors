@@ -3,12 +3,13 @@ kind: Pod
 metadata:
   name: nginx-tolerated
   labels:
-    project: roboshop
-    component: frontend
+    env: test
 spec:
   containers:
   - name: nginx
     image: nginx
+  NodeSelector:
+   project: roboshop
   tolerations:
   - key: "project"
     operator: "Equal"
