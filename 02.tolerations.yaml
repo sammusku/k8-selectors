@@ -8,7 +8,7 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  NodeSelector:
+  nodeSelector:
    project: roboshop
   tolerations:
   - key: "project"
