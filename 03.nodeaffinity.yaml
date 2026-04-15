@@ -14,7 +14,7 @@ spec:
         values:
          - us-east-1c
     #soft rule
-  preferredDuringSchedulingIgnoredDuringExecution:
+   preferredDuringSchedulingIgnoredDuringExecution:
      - weight: 10
        preference:
         matchExpressions:
