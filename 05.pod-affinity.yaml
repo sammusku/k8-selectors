@@ -11,7 +11,7 @@ spec:
 ---
 apiVersion: v1
 kind: Pod
-metadta:
+metadata:
  name: pod-2
  labels:
   tier: backend
