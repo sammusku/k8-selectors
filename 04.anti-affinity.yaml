@@ -18,7 +18,7 @@ spec:
          operator: NotIn
          values:
          - Amazon
-  containers:
+ containers:
    name: nginx
    image: nginx
 
