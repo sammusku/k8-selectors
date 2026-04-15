@@ -13,6 +13,23 @@ spec:
         operator: In
         values:
          - us-east-1c
+    #soft rule
+  preferredDuringSchedulingIgnoredDuringExecution:
+     - weight: 10
+       preference:
+        matchExpressions:
+         - key: project
+           operator: In
+           values:
+           - roboshop
+     - weight: 1
+       preference:
+        matchExpressions:
+         - key: project
+           operator: In
+           values:
+           - Amazon
+           
  containers:
   - name: nginx
     image: nginx
