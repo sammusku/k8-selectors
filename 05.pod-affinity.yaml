@@ -19,7 +19,7 @@ spec:
  affinity:
    podAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
-    - labelselector:
+    - labelSelector:
        matchExpressions:
         - key: tier
           operator: In
